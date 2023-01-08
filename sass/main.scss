@@ -1,0 +1,11 @@
+// $primary : rgb(255,0,0);
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors:(
+"color":rgb(3,3,3)
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// ompoert bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
