@@ -1,40 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="css/main.min.css" rel="stylesheet" >   
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+
+  <link href="css/main.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="https://cdn-group.bnpparibas.com/favicon.ico">
+
+  <title>BNP Paribas El Djazaïr | Particuliers</title>
 </head>
-<body>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<style>
+  .height-100 {
+    height: 100vh;
+  }
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  .height-50 {
+    height: 50vh;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="not-found.html">
+        <img src="images/Group 7.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav gap-4   ">
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary  rounded-pill "> <svg style='height:20px;width:30px'
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
+              </svg></a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary rounded-pill text-light"
+              href="https://algerie.bnpparibas.net/EBKHtmlClient/start/login">devenir
+              client</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary rounded-pill text-light" href="not-found.html">Je suis client</a>
+          </li>
+        </ul>
       </div>
-      <div class="modal-body">
-        ...
+    </div>
+  </nav>
+  <!-- hero section -->
+  <section class="container-fluid  hero-section d-flex flex-column flex-lg-row justify-content-between  p-0   ">
+    <div class="container hero-text      align-self-center d-flex flex-column gap-4   d-lg-flex order-2 order-lg-1 ">
+
+      <h3 class="display-5">Un univers d'opportunités <span class="text-primary">Ouvert à vous.</span> </h3>
+
+      <p>
+        Votre compte <span><b>BNP PARIBAS EL DJAZAÏR</b></span> est votre clé
+        pour débloquer un univers d'opportunités. Qu'il s'agisse d'effectuer
+        des paiements internationaux, de recevoir des fonds, de gérer votre
+        entreprise numérique ou d'accéder à des capitaux,
+        <span><b>BNP PARIBAS EL DJAZAÏR</b></span> ouvre votre entreprise sur
+        le monde.
+      </p>
+      <div class="d-flex justify-content-center  ">
+
+        <a href="not-found.html" class="btn btn-primary text-light  ">Ouvrir un Compte en ligne</a>
+        <!-- <a href="not-found.html" class="btn btn-primary text-light">Decouvrir BNP Paribas EL Djazair en ligne</a>  -->
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+    </div>
+
+
+
+
+    <div class=" m-0 ms-lg-auto  me-lg-2 ">
+      <img class=" mt-lg-5 shadow" src="images/hero-image3.png" width="100%" height="80%" alt="" srcset="">
+    </div>
+
+  </section>
+
+
+
+  <!-- map Modal -->
+  <div class="modal fade " id="mapModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">nos Agences</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12794.63895881594!2d3.2081002!3d36.7067136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1673773538544!5m2!1sfr!2sdz"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
       </div>
     </div>
   </div>
-</div>
 
 
-      <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- help side bar -->
+
+  <div class="container-fluid w-auto p-0  d-flex help-frame temp ">
+    <div class="help-window d-flex flex-column justify-content-center">
+
+
+      <div class="w-100 h-25   rounded-1 border-bottom"> <button class="btn w-100 h-100" class="btn btn-primary"
+          data-bs-toggle="modal" data-bs-target="#mapModal"> <img class="img-fluid " src="images/map-icon.svg"
+            alt=""></button></div>
+      <div class="w-100 h-25   rounded-1 border-bottom "> <a href="not-found.html" class="btn  w-100 h-100 mt-4  "> <img
+            class="img-fluid" src="images/phone-icon.svg" alt=""></a></div>
+      <div class="w-100 h-25   rounded-1 "> <a href="not-found.html" class="btn w-100 h-100 mt-4"> <img
+            class="img-fluid" src="images/help-icon.svg" alt=""></a></div>
+
+
+
+
+    </div>
+    <div class="align-self-center p-1 side-bar-btn" id="tmp">
+      <img class="img-fluid" src="images/info.svg" alt="">
+    </div>
+  </div>
+
+  <!-- service seection section -->
+  <section class="container  mt-5" id="services-container">
+    <h2 class="display-4 text-center">Decouvrer BNP Paribas El djazair</h2>
+    <p class="text-center m-5 mt-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris n</p>
+
+    <!-- service categories tab (particulier, professionnel, entreprise) -->
+    <ul class="nav nav-tabs  nav-justified " id="myTab" role="tablist">
+      <li class="nav-item " role="presentation">
+        <button class="nav-link   active" id="particulier-tab" data-bs-toggle="tab" data-bs-target="#particulier"
+          type="button" role="tab" aria-controls="particulier" aria-selected="true">Particuliers</button>
+
+      </li>
+      <li class="nav-item ">
+        <button class="nav-link " id="professionnel-tab" data-bs-toggle="tab" data-bs-target="#professionnel"
+          type="button" role="tab" aria-controls="professionnel" aria-selected="false">Professionnels</button>
+      </li>
+      <li class="nav-item ">
+        <button class="nav-link " id="entreprise-tab" data-bs-toggle="tab" data-bs-target="#entreprise" type="button"
+          role="tab" aria-controls="entreprise" aria-selected="false">Entreprises</button>
+      </li>
+    </ul>
+
+
+    <!-- present different services and selections -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="particulier" role="tabpanel" aria-labelledby="particulier-tab"
+        tabindex="0">
+        <div class=" container p-4 d-flex flex-column  flex-wrap justify-content-center mt-3  ">
+
+          <div class="container-fluid p-4 d-flex  flex-wrap justify-content-center gap-3 mt-3 ">
+
+            <a href="not-found.html" class="btn btn-primary">Comptes & Packages</a>
+            <a href="not-found.html" class="btn btn-primary">Cartes</a>
+            <a href="not-found.html" class="btn btn-primary">Crédits </a>
+            <a href="not-found.html" class="btn btn-primary"> Epargne & Placements</a>
+            <a href="not-found.html" class="btn btn-primary">L’espace bourse</a>
+            <a href="not-found.html" class="btn btn-primary"> Assurances</a>
+            <a href="not-found.html" class="btn btn-primary"> Banque à distance</a>
+            <a href="not-found.html" class="btn btn-primary">Conditions de banque</a>
+            <a href="not-found.html" class="btn btn-primary"> Votre agence</a>
+            <a href="not-found.html" class="btn btn-primary">Remise de chèque & dépôt cash</a>
+            <a href="not-found.html" class="btn btn-primary">Ouverture de compte</a>
+
+          </div>
+          <h2 class="text-center display-4 mb-3">notre selections</h2>
+          <div class="container d-flex flex-column flex-lg-row gap-3 ">
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title ">ALGÉRIENS <b>RÉSIDENTS À L’ÉTRANGER</b></h5>
+                <p class="card-text">Découvrez toutes nos solutions qui vous sont dédiées</p>
+                <a href="not-found.html" class="btn btn-primary  mt-auto me-auto">En savoir plus</a>
+              </div>
+            </div>
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">CRÉDIT <b>IMMO FORMULE</b></h5>
+                <p class="card-text">Fini le statut de locataire, passez à celui de propriétaire</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus</a>
+              </div>
+            </div>
+
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title"><b>JEUNES</b></h5>
+                <p class="card-text">Les solutions BNP Paribas El Djazaïr pour bien démarrer dans la vie</p>
+                <a href="not-found.html" class="btn btn-primary  mt-auto me-auto">En savoir plus </a>
+              </div>
+            </div>
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PACKAGES <b>TOUT EN UN</b>
+                </h5>
+                <p class="card-text"> Le forfait « tout compris » pour l’essentiel des services bancair</p>
+                <a href="not-found.html" class="btn btn-primary  mt-auto me-auto">En savoir plus </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="professionnel" role="tabpanel" aria-labelledby="professionnel-tab" tabindex="0">
+
+        <div class=" container p-4 d-flex flex-column  flex-wrap justify-content-center mt-3  ">
+
+          <div class="container-fluid p-4 d-flex  flex-wrap justify-content-center gap-3 mt-3 ">
+
+            <a href="not-found.html" class="btn btn-primary"> Comptes</a>
+            <a href="not-found.html" class="btn btn-primary">Carte</a>
+            <a href="not-found.html" class="btn btn-primary"> Financement </a>
+
+            <a href="not-found.html" class="btn btn-primary">L’espace bourse</a>
+            <a href="not-found.html" class="btn btn-primary"> Assurances</a>
+            <a href="not-found.html" class="btn btn-primary"> Encaissements</a>
+            <a href="not-found.html" class="btn btn-primary"> Banque à distance</a>
+            <a href="not-found.html" class="btn btn-primary"> Taux de Change</a>
+            <a href="not-found.html" class="btn btn-primary">Conditions de banque</a>
+            <a href="not-found.html" class="btn btn-primary"> Agence</a>
+
+          </div>
+          <h2 class="text-center display-4 mb-3">notre selections</h2>
+          <div class="container d-flex flex-column flex-lg-row  gap-3">
+            <div class="card mb-3  w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">BÂTIMENT ET TRAVAUX PUBLICS</h5>
+                <p class="card-text">Découvrez toutes les offres dédiées aux BTP</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus </a>
+              </div>
+            </div>
+            <div class="card mb-3 w-auto w-lg-25  shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PROFESSIONS LIBÉRALES DE SANTÉ</h5>
+                <p class="card-text">Découvrez toutes les offres dédiées aux PLS</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus </a>
+              </div>
+            </div>
+
+            <div class="card mb-3  w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">FLEXEO</h5>
+                <p class="card-text">Donnez plus de liberté à vos investissements</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus</a>
+              </div>
+            </div>
+            <div class="card mb-3  w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PACK <b>ESPRIT LIBRE PRO</b></h5>
+                <p class="card-text">Professionnels, simplifiez votre quotidien à moindre coût</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="entreprise" role="tabpanel" aria-labelledby="entreprise-tab" tabindex="0">
+
+        <div class=" container p-4 d-flex flex-column  flex-wrap justify-content-center mt-3  ">
+
+          <div class="container-fluid p-4 d-flex  flex-wrap justify-content-center gap-3 mt-3 ">
+
+            <a href="not-found.html" class="btn btn-primary">Financement de la croissance</a>
+            <a href="not-found.html" class="btn btn-primary">L’espace bourse</a>
+            <a href="not-found.html" class="btn btn-primary">Gestion des flux </a>
+            <a href="not-found.html" class="btn btn-primary"> Carte</a>
+            <a href="not-found.html" class="btn btn-primary"> Gestion du cycle d’exploitation</a>
+            <a href="not-found.html" class="btn btn-primary"> Commerce International</a>
+            <a href="not-found.html" class="btn btn-primary"> Fidélisation des salariés</a>
+
+            <a href="not-found.html" class="btn btn-primary"> Taux de Change</a>
+            <a href="not-found.html" class="btn btn-primary">Conditions de banque</a>
+            <a href="not-found.html" class="btn btn-primary">Note d’information </a>
+
+          </div>
+          <h2 class="text-center display-4 mb-3">notre selections</h2>
+          <div class="container d-flex flex-column flex-lg-row gap-3">
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  BANQUE EN LIGNE</h5>
+                <p class="card-text">Découvrez toutes nos solutions de gestion des flux</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus</a>
+              </div>
+            </div>
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">TPE</h5>
+                <p class="card-text">Gagnez en confort et dynamisez vos ventes avec le règlement par carte bancaire</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus</a>
+              </div>
+            </div>
+
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">PACK PME <b>SIMPLEO</b></h5>
+                <p class="card-text">Économisez votre temps en simplifiant vos relations avec votre banque</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus</a>
+              </div>
+            </div>
+            <div class="card mb-3 w-auto w-lg-25 shadow" style="width: 18rem;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  LEASING</h5>
+                <p class="card-text">Simplifiez votre financement avec le Leasing BNP Paribas</p>
+                <a href="not-found.html" class="btn btn-primary mt-auto me-auto">En savoir plus </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- services promotion section (ads ..) -->
+  <section class="mt-5">
+    <div class="container d-flex flex-column flex-lg-row   p-3 gap-5 ads">
+
+      <div class="container     shadow p-0 " id="gg">
+        <img src="images/gg.jpg" width="100%" height="100%" alt="">
+      </div>
+
+      <div class="container d-flex flex-column    gap-4 justify-content-center border-dark ">
+        <h6 class="display-4 text-start">recharge Téléphonique</h6>
+        <p class="">Avec votre carte CIB BNP Paribas El Djazair, rechargez instantanément votre ligne téléphonique sur
+          tous nos guichets automatiques</p>
+        <a href="not-found.html" class="btn btn-primary mt-lg-5 align-self-start w-50 rounded-0 text-light p-3"
+          role="button">En
+          savoire
+          plus</a>
+      </div>
+
+    </div>
+
+    <div class="container d-flex  flex-column flex-lg-row  p-3 mt-5  gap-5 ads">
+
+      <div class="container order-1 order-lg-2   shadow p-0" id="gg">
+        <img src="images/ads22.jpg" width="100%" height="100%" alt="">
+      </div>
+
+      <div class="container d-flex flex-column  order-2 order-lg-1 gap-4 justify-content-center border-dark ">
+        <h6 class="display-4 text-start">guichets Automatiques</h6>
+        <p class="">Les GAB BNP Paribas EL Djazair vous permettent de retirer l’argent dont vous avez besoin et de
+          disposer de divers fonctionnalités pour vous faciliter le quotidien : consultation du solde de vos comptes,
+          virements, commande de chéquier…</p>
+        <a href="not-found.html" class="btn btn-primary mt-lg-5 align-self-start w-50 rounded-0 p-3 text-light"
+          role="button">En
+          savoire
+          plus</a>
+      </div>
+
+    </div>
+
+    <div class="container d-flex  flex-column flex-lg-row  p-3 mt-5 gap-5 ads">
+
+      <div class="container     shadow p-0" id="">
+        <img src="images/gg.jpg" width="100%" height="100%" alt="">
+      </div>
+
+      <div class="container d-flex flex-column    gap-4 justify-content-center border-dark ">
+        <h6 class="display-4 text-start">Appli mobile <span class="text-primary">My Bank</span></h6>
+        <p class="">Gérez vos comptes bancaire sans vous déplacer !<br>
+          L’application BNP Paribas El Djazaïr « My Bank », c’est toute votre Banque dans votre mobile ou tablette !
+
+
+          Que vous soyez Particulier, Professionnel ou Entreprise, vous accédez à un espace personnalisé et adapté à vos
+          besoins.</p>
+        <a href="not-found.html" class="btn btn-primary mt-lg-5 align-self-start w-50 rounded-0 p-3 text-light"
+          role="button">En
+          savoire
+          plus</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- carreers section -->
+  <section class="container-fluid p-0 height-100 d-flex   mt-auto">
+
+    <div class="w-100   d-flex flex-column flex-lg-row align-self-center position-relative gap-5">
+
+
+      <div class="hiring-img  w-100  text-center d-flex ">
+        <img class="m-auto img-fluid" src="images/carreers.png" alt="" width="90%" height="80%" srcset="">
+      </div>
+      <div class="container w-100 hiring-text d-flex flex-column justify-content-evenly gap-2">
+        <h3 class="display-2">Carrières chez BNP Paribas El Djazair</h3>
+        <p class="">Être la Banque d’un monde qui change est plus qu’un slogan, c’est une promesse que nous tenons au
+          quotidien</p>
+        <a class="btn btn-primary  w-50" href="not-found.html">En savoir plus</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <section class=" footer container-fluid d-flex flex-column justify-content-center">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between mb-5">
+      <div class="d-flex flex-column  align-self-start mb-5">
+        <img src="images/logo1.svg" width="100%" height="100%" alt="">
+        <div class="d-flex justify-content-between footer-icons mt-5">
+          <a href="not-found.html" class=""><i class="fa-brands fa-facebook text-dark h-100"></i></a>
+          <a href="not-found.html" class=""><i class="fa-brands fa-youtube text-dark h-100"></i></a>
+          <a href="not-found.html" class=""><i class="fa-brands fa-linkedin text-dark h-100"></i></a>
+        </div>
+      </div>
+      <div class="w-50 footer-text d-flex flex-column justify-content-around flex-lg-row ">
+
+        <div class="d-flex flex-column">
+
+          <a href="not-found.html" class="text-dark fs-4">accueil</a>
+          <a href="not-found.html" class="text-dark fs-4">pré-domiciliation</a>
+          <a href="not-found.html" class="text-dark fs-4">Reglementation</a>
+
+        </div>
+
+        <div class="d-flex flex-column">
+
+          <a href="not-found.html" class="text-dark fs-4">nous connaitre</a>
+          <a href="not-found.html" class="text-dark fs-4">aide</a>
+          <a href="not-found.html" class="text-dark fs-4">contacts</a>
+          <a href="not-found.html" class="text-dark fs-4">agences</a>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="container-fluid  row  mx-auto mb-3 text-center">
+      <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">RECRUTEMENT</a>
+      <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">FINANCE</a>
+      <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">ESPACE PRESSE</a>
+      <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">MENTIONS</a>
+      <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">LÉGALES</a>
+      <a class="col-4 col-md border-end border-dark-subtle " href="not-found.html">TARIFS</a>
+      <a class="col-12 col-md-2  border-dark-subtle" href="not-found.html">© BNP Paribas - 2023</a>
+
+
+    </div>
+  </section>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/c501080d7e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

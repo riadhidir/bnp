@@ -1,0 +1,135 @@
+
+.hero-section {
+    height: auto;
+}
+
+.hero-text {
+    width: 75%;
+    position: relative;
+    bottom: 75px;
+    background-color: white;
+}
+
+
+.hero-section img {
+    object-fit: cover;
+}
+
+/* footer */
+.footer a {
+    text-decoration: none;
+}
+.footer a:hover{
+    color: black;
+}
+
+
+.btn-primary:hover {
+    color: black !important;
+    background-color: white;
+}
+
+/* .ads section (promotions)*/
+
+.ads img {
+    object-fit: cover;
+}
+.ads {
+    height: auto;
+}
+/* RECRUTEMENT */
+.hiring-img img:hover {
+    width: 100% !important;
+    height: 90% !important;
+    transition: width 0.5s linear, height 0.5s linear !important;
+}
+
+
+
+
+/* sidebar */
+.side-bar-btn{
+    cursor: pointer;
+ width: 50px;
+ height:50px;
+ background-color:white;
+ border-radius: 0 50% 50% 0;
+}
+.help-window {
+
+    height: 60vh;
+    width: 20vw;
+    background-color: white;
+    clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
+
+}
+
+.help-window img {
+    width: 50%;
+    height: 50%;
+}
+
+.help-frame {
+    filter: drop-shadow(0px 0px 5px black);
+    position: fixed;
+    top: 25%;
+    left: 0vw;
+    z-index: 100;
+
+    transition: left 0.1s linear;
+
+}
+
+.temp {
+    left: -20vw;
+    transition: left 0.1s linear;
+}
+
+@media screen and (min-width:992px) {
+
+    .ads {
+        height: 100vh;
+    }
+
+    .hero-section {
+        height: 90vh;
+    }
+
+    .hero-text {
+        width: 50%;
+        bottom: 0;
+
+    }
+
+    .help-window {
+
+        height: 60vh;
+        width: 7vw;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
+
+    }
+
+    .help-frame {
+        filter: drop-shadow(0px 0px 5px black);
+        position: fixed;
+        top: 25%;
+        left: 0vw;
+        z-index: 100;
+
+        transition: left 0.1s linear;
+
+    }
+
+    .temp {
+        left: -7vw;
+        transition: left 0.1s linear;
+
+    }
+
+    .help-window img {
+        width: 50%;
+        height: 50%;
+    }
+
+}
