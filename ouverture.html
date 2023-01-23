@@ -15,49 +15,69 @@
 </head>
 
 <body>
-	<!--header-->
-	<nav class="navbar navbar-expand-sm bg-light navbar-light">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">
-				<img src="images/Group 7.svg" alt="" />
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-md  navbar-light d-flex flex-column p-0">
+		<div class="container-fluid ">
+			<a class="navbar-brand " href="index.html">
+				<img class="" src="images/Group 7.svg" alt="">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-				<ul class="navbar-nav gap-4">
+				<ul class="navbar-nav gap-4  ">
 					<li class="nav-item">
-						<a class="nav-link btn btn-primary rounded-pill">
-							<svg style="height: 20px; width: 30px" xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 512 512">
-								<!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-								<path
-									d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z" />
-							</svg></a>
+						<a class="nav-link btn btn-primary  rounded-pill "> <i
+								class="fa-solid fa-magnifying-glass fa-fw"></i></a>
+
 					</li>
 					<li class="nav-item">
-						<a class="nav-link btn btn-primary rounded-pill text-light"
-							href="https://algerie.bnpparibas.net/EBKHtmlClient/start/login">devenir client</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link btn btn-primary rounded-pill text-light" href="cnx.html" target="_blank">Je suis
+						<a class="nav-link btn btn-primary rounded-pill text-light" href="ouverture.html">devenir
 							client</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-primary rounded-pill text-light" href="cnx.html">Je suis client</a>
 					</li>
 				</ul>
 			</div>
 		</div>
+		<div class="progress-container">
+			<div class="progress-bar" id="myBar"></div>
+		</div>
 	</nav>
 
+	 <!-- help side bar -->
+
+
+	 <div class="sidebar2">
+		<div class="side-menu2">
+		  <ul>
+			<li><a  onclick="linkModal('#mapModal')"><i class="fa-solid fa-map-location-dot fa-xl text-primary" ></i></a></li>
+			<li><a href="not-found.html"><i class="fa-solid fa-phone-volume fa-xl text-primary" ></i></a></li>
+			<li><a href="not-found.html"><i class="fa-solid fa-headset fa-xl text-primary" ></i></a></li>
+		  </ul>
+		</div>
+		<div class="side-menu-trigger"   >
+			<svg id="sideBarTrigger" width="21" height="78" viewBox="0 0 21 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+			  <path class="trigger-icon" d="M7.04177 72.51C4.90521 73.7934 2.67727 75.2237 0.5 76.9494V1.09052C2.42516 2.69508 4.43323 4.01413 6.39667 5.21432C7.16963 5.68679 7.93126 6.13839 8.67778 6.58101C10.1175 7.43466 11.501 8.25495 12.8009 9.12738C16.7031 11.7464 19.6786 14.7258 20.5 20.0382V58.9917C20.3548 63.3233 17.6985 65.9415 13.7243 68.5173C12.4584 69.3378 11.0852 70.1379 9.63281 70.9842C8.79379 71.4731 7.92831 71.9774 7.04177 72.51Z" fill="#0d1519" stroke="white"/>
+			  <path d="M8.3871 33.242L13.8226 38.6613C13.8871 38.7258 13.9327 38.7957 13.9594 38.871C13.9865 38.9463 14 39.0269 14 39.1129C14 39.1989 13.9865 39.2796 13.9594 39.3549C13.9327 39.4301 13.8871 39.5 13.8226 39.5645L8.3871 45C8.23656 45.1506 8.04839 45.2258 7.82258 45.2258C7.59677 45.2258 7.40322 45.1452 7.24193 44.9839C7.08064 44.8226 7 44.6344 7 44.4194C7 44.2043 7.08064 44.0162 7.24193 43.8549L11.9839 39.1129L7.24193 34.371C7.0914 34.2205 7.01613 34.0351 7.01613 33.8149C7.01613 33.5942 7.09677 33.4032 7.25806 33.242C7.41935 33.0807 7.60753 33 7.82258 33C8.03763 33 8.22581 33.0807 8.3871 33.242Z" fill="#0FA958"/>
+			  </svg>
+			  
+			
+		</div>
+	
+	  </div>
 	<!--intro section-->
 	<div class="green compte">
 		<a class="important" href="#ouverture">
 			<h4>OUVERTURE DE COMPTE EN LIGNE</h4>
 		</a>
 	</div>
+	
 	<div class="gray">
 		<h3>POURQUOI DEVENIR CLIENT <b>BNP PARIBAS EL DJAZAÏR ?</b></h3>
 		<div class="green securite">
-			<a class="important" href="not-found.html"  target="_blank">
+			<a class="important" href="not-found.html" target="_blank">
 				<h5>SÉCURITÉ</h5>
 			</a>
 		</div>
@@ -67,13 +87,13 @@
 			</a>
 		</div>
 		<div class="green prox ">
-			<a class="important" href="not-found.html"  target="_blank">
+			<a class="important" href="not-found.html" target="_blank">
 				<h5>PROXIMITÉ</h5>
 			</a>
 		</div>
 	</div>
 
-	
+
 
 	<!--ouverture section-->
 	<div id="ouverture" class="vert">
@@ -105,64 +125,64 @@
 		</div>
 	</div>
 
-	
 
-	
+
+
 	<!-- footer -->
 
-	<section class=" footer container-fluid d-flex flex-column justify-content-center footer_ouverture">
-		<div class="container d-flex flex-column flex-lg-row justify-content-between mb-5">
-		  <div class="d-flex flex-column  align-self-start mb-5">
-			<img src="images/logo1.svg" width="100%" height="100%" alt="">
-			<div class="d-flex justify-content-between footer-icons mt-5">
-			  <a href="not-found.html" class=""><i class="fa-brands fa-facebook text-dark h-100"></i></a>
-			  <a href="not-found.html" class=""><i class="fa-brands fa-youtube text-dark h-100"></i></a>
-			  <a href="not-found.html" class=""><i class="fa-brands fa-linkedin text-dark h-100"></i></a>
+	<footer class="container-fluid d-flex flex-column w-100 p-0 bg-dark-bnp" id="footer">
+		<div class="upper-footer d-flex flex-column flex-lg-row justify-content-evenly   p-2 pt-5 bg-dark-bnp">
+			<div class=" me-auto">
+				<img class="  " width="70%" src="images/logo-footer-white.svg" alt="">
 			</div>
-		  </div>
-		  <div class="w-50 footer-text d-flex flex-column justify-content-around flex-lg-row ">
-	
-			<div class="d-flex flex-column">
-	
-			  <a href="not-found.html" class="text-dark fs-4">accueil</a>
-			  <a href="not-found.html" class="text-dark fs-4">pré-domiciliation</a>
-			  <a href="not-found.html" class="text-dark fs-4">Reglementation</a>
-	
+			<div class="d-flex flex-column w-25 footer-links mt-5 mt-lg-0 ">
+				<a href="not-found.html" class="text-light ">Nous connaitre</a>
+				<a href="not-found.html" class="text-light ">Aide</a>
+				<a href="not-found.html" class="text-light ">Contacts</a>
+				<a href="not-found.html" class="text-light ">Agences</a>
 			</div>
-	
-			<div class="d-flex flex-column">
-	
-			  <a href="not-found.html" class="text-dark fs-4">nous connaitre</a>
-			  <a href="not-found.html" class="text-dark fs-4">aide</a>
-			  <a href="not-found.html" class="text-dark fs-4">contacts</a>
-			  <a href="not-found.html" class="text-dark fs-4">agences</a>
-	
-	
+			<div class="d-flex flex-column w-25 footer-links ">
+				<a href="not-found.html" class="text-light ">Nous connaitre</a>
+				<a href="not-found.html" class="text-light ">Aide</a>
+				<a href="not-found.html" class="text-light ">Contacts</a>
+				<a href="not-found.html" class="text-light ">Agences</a>
 			</div>
-	
-		  </div>
-	
-	
-		</div>
-	
-		<div class="container-fluid  row  mx-auto mb-3 text-center">
-		  <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">RECRUTEMENT</a>
-		  <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">FINANCE</a>
-		  <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">ESPACE PRESSE</a>
-		  <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">MENTIONS</a>
-		  <a class="col-4 col-md  border-end border-dark-subtle mb-3 mb-lg-0" href="not-found.html">LÉGALES</a>
-		  <a class="col-4 col-md border-end border-dark-subtle " href="not-found.html">TARIFS</a>
-		  <a class="col-12 col-md-2  border-dark-subtle" href="not-found.html">© BNP Paribas - 2023</a>
-	
-	
-		</div>
-	  </section>
-	
-	  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	  <script src="js/main.js"></script>
-	  <script src="https://kit.fontawesome.com/c501080d7e.js" crossorigin="anonymous"></script>
+			<div class="d-flex flex-column w-25 footer-links ">
+				<a href="not-found.html" class="text-light ">Nous connaitre</a>
+				<a href="not-found.html" class="text-light ">Aide</a>
+				<a href="not-found.html" class="text-light ">Contacts</a>
+				<a href="not-found.html" class="text-light ">Agences</a>
+			</div>
 
-	
+
+		</div>
+
+		<!-- social +  ©  -->
+		<div
+			class="lower-footer d-flex flex-column flex-lg-row justify-content-between align-items-center border-5 border-primary border-top bg-light">
+			<!-- social  -->
+			<div class="d-flex">
+				<ul>
+
+					<li><a href="not-found.html"><i class="fa-brands fa-square-facebook fa-xl   text-dark-bnp"></i></a>
+					</li>
+					<li><a href="not-found.html"><i class="fa-brands fa-linkedin fa-xl text-dark-bnp"></i></a></li>
+					<li><a href="not-found.html"><i class="fa-brands fa-youtube fa-xl text-dark-bnp"></i></a></li>
+				</ul>
+
+			</div>
+
+			<!--  ©  -->
+			<p class="m-0 text-dark-bnp"><span class="text-primary">©</span> BNP Paribas - 2023</p>
+		</div>
+
+	</footer>
+
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/c501080d7e.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+
 </body>
 
 </html>
