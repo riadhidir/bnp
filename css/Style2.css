@@ -7,7 +7,7 @@ body{
 /* Titre Recrurtement */
 header{
     
-    background: url("images/Recrutement\ 1.jpg");
+    background: url("../images/Recrutement\ 1.jpg");
     background-position: center;
     background-size: cover;
     height: calc(100vh - 50px);
@@ -59,7 +59,7 @@ h1{
     margin-right: 25px;
     width: 400px;
     height: 400px;
-    background: url('images/card.jpg') center no-repeat;
+    background: url("../images/card.jpg") center no-repeat;
     position: relative;
     overflow: hidden;
     box-shadow: 0 5px 50px rgba(0,0,0,0.85);
@@ -82,7 +82,7 @@ h1{
    
     width: 25%;
     height: 100%;
-    background: url('images/photo-1522202176988-66273c2fd55f.avif') no-repeat;
+    background: url('../images/photo-1522202176988-66273c2fd55f.avif') no-repeat;
     transition: 0.5s;
 
 }
@@ -164,7 +164,7 @@ h1{
    
     width: 25%;
     height: 100%;
-    background: url('images/JOIN\ OUR\ TEAM.jpg') no-repeat;
+    background: url('../images/JOIN\ OUR\ TEAM.jpg') no-repeat;
     transition: 0.5s;
 
 }
@@ -241,7 +241,7 @@ h1{
    
     width: 25%;
     height: 100%;
-    background: url('images/istockphoto-1291751221-170667a.jpg') no-repeat;
+    background: url('../images/istockphoto-1291751221-170667a.jpg') no-repeat;
     transition: 0.5s;
 
 }
