@@ -1,0 +1,150 @@
+a{
+    text-decoration: none !important;
+}
+
+.single-value{
+    
+    border-radius: 16px;
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 100%; */
+  /* min-height: 500px; */
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-size: cover;
+}
+
+
+.single-value:nth-child(1){
+  background-image: url("../images/Privacy\ policy-bro.svg");
+
+}
+.single-value:nth-child(2){
+    background-image: url("../images/Location\ search-bro.svg");
+  
+  }
+  .single-value:nth-child(3){
+    background-image: url("../images/Service\ 24_7-bro.svg");
+  
+  }
+
+
+.single-value .info{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateY(100%)
+      translateY(-88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+    
+}
+
+.info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../images/Privacy\ policy-bro.svg");
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%)
+      translateY(88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  .single-value:hover .info,
+  .single-value:hover .info:before {
+    transform: translateY(0) translateZ(0);
+    overflow: auto;
+
+  }
+  .title {
+    margin: 0;
+    padding: 24px;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow: auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+    position: relative;
+    transition: all .3s ease
+  }
+ 
+  
+
+  
+  body,
+  header {
+    background: #fafafa
+  }
+  
+  header {
+    padding: 40px;
+    min-height: 200px;
+    text-align: center;
+    color: rgba(0, 0, 0, .87)
+  }
+  
+ 
+
+  
+  h1 {
+    margin-bottom: 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+    color: #1c5b72;
+    font-size: 2.618em
+  }
+  
+  @media (min-width:800px) {
+    h1 {
+      font-size: 4.236em;
+      font-weight: 300
+    }
+  }
+  
+  p {
+    margin-bottom: 1.3em;
+    line-height: 1.618
+  }
+  
+  @media (min-width:800px) {
+    .description {
+      font-size: 1.3em
+    }
+    
+  }
+  
+  
+  .register-links div{
+    height: 75px;
+  }
+  .register-links a {
+    text-decoration: none;
+    margin: 15px 20px;
+    padding: 15px 20px;
+
+    color:white;
+    background-color: #03a776;
+  }
+  .register {
+    margin-bottom: 100px;
+  }

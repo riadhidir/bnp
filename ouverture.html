@@ -10,65 +10,120 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="./css/style.css" />
+
+	<link rel="stylesheet" href="./css/styletmp.css" />
+	<link rel="stylesheet" href="./css/style4.css" />
+
 	<link href="css/main.min.css" rel="stylesheet" />
 </head>
 
 <body>
 	<!-- navbar -->
-	<nav class="navbar navbar-expand-md  navbar-light d-flex flex-column p-0">
+	<nav class="navbar navbar-expand-md navbar-light d-flex flex-column p-0 navbar-sm">
 		<div class="container-fluid ">
-			<a class="navbar-brand " href="index.html">
-				<img class="" src="images/Group 7.svg" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-				<ul class="navbar-nav gap-4  ">
-					<li class="nav-item">
-						<a class="nav-link btn btn-primary  rounded-pill "> <i
-								class="fa-solid fa-magnifying-glass fa-fw"></i></a>
-
-					</li>
-					<li class="nav-item">
-						<a class="nav-link btn btn-primary rounded-pill text-light" href="ouverture.html">devenir
-							client</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link btn btn-primary rounded-pill text-light" href="cnx.html">Je suis client</a>
-					</li>
-				</ul>
-			</div>
+		  <a class="navbar-brand " href="index.html">
+			<img class="" src="./images/logo-sm.svg" alt="">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+			<ul class="navbar-nav gap-4  ">
+			  <li class="nav-item order-3 ">
+				<a class="nav-link btn btn-primary rounded-pill rounded-0 text-light"> 
+				  <svg class="svg-inline--fa fa-magnifying-glass fa-fw" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass fa-fw"></i> Font Awesome fontawesome.com --></a>
+	
+			  </li>
+			  <li class="nav-item ">
+				<a class="nav-link btn btn-primary rounded-pill text-light rounded-0" href="ouverture.html">Devenir
+				  client</a>
+			  </li>
+			  <li class="nav-item ">
+				<a class="nav-link btn btn-primary rounded-pill text-light rounded-0" href="cnx.html">Je suis client</a>
+			  </li>
+			</ul>
+		  </div>
 		</div>
 		<div class="progress-container">
-			<div class="progress-bar" id="myBar"></div>
+		  <div class="progress-bar" id="myBar" style="width: 46.1138%;"></div>
 		</div>
-	</nav>
-
-	 <!-- help side bar -->
-
-
-	 <div class="sidebar2">
+	  </nav>
+	<!-- help side bar -->
+	<div class="sidebar2">
 		<div class="side-menu2">
-		  <ul>
-			<li><a  onclick="linkModal('#mapModal')"><i class="fa-solid fa-map-location-dot fa-xl text-primary" ></i></a></li>
-			<li><a href="not-found.html"><i class="fa-solid fa-phone-volume fa-xl text-primary" ></i></a></li>
-			<li><a href="not-found.html"><i class="fa-solid fa-headset fa-xl text-primary" ></i></a></li>
-		  </ul>
+			<ul>
+				<li><a onclick="linkModal('#mapModal')"><i
+							class="fa-solid fa-map-location-dot fa-xl text-primary"></i></a></li>
+				<li><a href="not-found.html"><i class="fa-solid fa-phone-volume fa-xl text-primary"></i></a></li>
+				<li><a href="not-found.html"><i class="fa-solid fa-headset fa-xl text-primary"></i></a></li>
+			</ul>
 		</div>
-		<div class="side-menu-trigger"   >
-			<svg id="sideBarTrigger" width="21" height="78" viewBox="0 0 21 78" fill="none" xmlns="http://www.w3.org/2000/svg">
-			  <path class="trigger-icon" d="M7.04177 72.51C4.90521 73.7934 2.67727 75.2237 0.5 76.9494V1.09052C2.42516 2.69508 4.43323 4.01413 6.39667 5.21432C7.16963 5.68679 7.93126 6.13839 8.67778 6.58101C10.1175 7.43466 11.501 8.25495 12.8009 9.12738C16.7031 11.7464 19.6786 14.7258 20.5 20.0382V58.9917C20.3548 63.3233 17.6985 65.9415 13.7243 68.5173C12.4584 69.3378 11.0852 70.1379 9.63281 70.9842C8.79379 71.4731 7.92831 71.9774 7.04177 72.51Z" fill="#0d1519" stroke="white"/>
-			  <path d="M8.3871 33.242L13.8226 38.6613C13.8871 38.7258 13.9327 38.7957 13.9594 38.871C13.9865 38.9463 14 39.0269 14 39.1129C14 39.1989 13.9865 39.2796 13.9594 39.3549C13.9327 39.4301 13.8871 39.5 13.8226 39.5645L8.3871 45C8.23656 45.1506 8.04839 45.2258 7.82258 45.2258C7.59677 45.2258 7.40322 45.1452 7.24193 44.9839C7.08064 44.8226 7 44.6344 7 44.4194C7 44.2043 7.08064 44.0162 7.24193 43.8549L11.9839 39.1129L7.24193 34.371C7.0914 34.2205 7.01613 34.0351 7.01613 33.8149C7.01613 33.5942 7.09677 33.4032 7.25806 33.242C7.41935 33.0807 7.60753 33 7.82258 33C8.03763 33 8.22581 33.0807 8.3871 33.242Z" fill="#0FA958"/>
-			  </svg>
-			  
-			
+		<div class="side-menu-trigger">
+			<svg id="sideBarTrigger" width="21" height="78" viewBox="0 0 21 78" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path class="trigger-icon"
+					d="M7.04177 72.51C4.90521 73.7934 2.67727 75.2237 0.5 76.9494V1.09052C2.42516 2.69508 4.43323 4.01413 6.39667 5.21432C7.16963 5.68679 7.93126 6.13839 8.67778 6.58101C10.1175 7.43466 11.501 8.25495 12.8009 9.12738C16.7031 11.7464 19.6786 14.7258 20.5 20.0382V58.9917C20.3548 63.3233 17.6985 65.9415 13.7243 68.5173C12.4584 69.3378 11.0852 70.1379 9.63281 70.9842C8.79379 71.4731 7.92831 71.9774 7.04177 72.51Z"
+					fill="#0d1519" stroke="white" />
+				<path
+					d="M8.3871 33.242L13.8226 38.6613C13.8871 38.7258 13.9327 38.7957 13.9594 38.871C13.9865 38.9463 14 39.0269 14 39.1129C14 39.1989 13.9865 39.2796 13.9594 39.3549C13.9327 39.4301 13.8871 39.5 13.8226 39.5645L8.3871 45C8.23656 45.1506 8.04839 45.2258 7.82258 45.2258C7.59677 45.2258 7.40322 45.1452 7.24193 44.9839C7.08064 44.8226 7 44.6344 7 44.4194C7 44.2043 7.08064 44.0162 7.24193 43.8549L11.9839 39.1129L7.24193 34.371C7.0914 34.2205 7.01613 34.0351 7.01613 33.8149C7.01613 33.5942 7.09677 33.4032 7.25806 33.242C7.41935 33.0807 7.60753 33 7.82258 33C8.03763 33 8.22581 33.0807 8.3871 33.242Z"
+					fill="#0FA958" />
+			</svg>
+
+
 		</div>
-	
-	  </div>
+
+	</div>
+
+
+	<h2 class="display-6 m-5"> <b>POURQUOI DEVENIR CLIENT</b> BNP PARIBAS EL DJAZAÏR ?</h2>
+
+	<!-- values -->
+	<div class="values container d-flex gap-3 flex-column p-2 p-lg-0 flex-lg-row justify-content-evenly">
+
+		<div class="single-value">
+			<div class="info">
+				<h3 class="title">SÉCURITÉ</h3>
+				<p class="description">BNP Paribas El Djazaïr est la filiale algérienne du Groupe BNP Paribas, récompensé à plusieurs reprises par la presse spécialisée ou la profession.<br>
+
+					Le Groupe BNP Paribas bénéficie d’une solidité financière importante, d’un niveau de rentabilité élevé et se situe ainsi parmi les premières banques internationales : 11e entreprise dans le monde, 1e entreprise mondiale en termes d’actifs, 7e banque mondiale (Global 2000 Forbes – 2010), 9e banque la plus sure au monde (Global Finance – Octobre 2009).
+					<br>
+					
+					Depuis sa création en 2002, BNP Paribas El Djazaïr est désormais l’une des banques du secteur privé les plus importantes sur le territoire algérien.</p>
+			</div>
+		</div>
+
+		<div class="single-value">
+			<div class="info">
+				<h3 class="title">ACCOMPAGNEMENT</h3>
+				<p class="description">
+					Votre conseiller est à votre disposition pour répondre à vos attentes ou vous proposer des solutions personnalisées pour vous aider à réaliser vos projets :
+
+					<br>compte chèques ou pack adapté à vos besoins, épargne, crédit…
+					
+					Aussi notre Centre de Relation Client, DIRECT Call vous accompagne dans vos démarches quotidiennes, demande d’information ou assistance à l’utilisation de produits ou services par mail via les formulaires disponibles sur notre site internet. Ou par téléphone :
+					
+					<br>> Pour les particuliers, les professionnels ou les entreprises : du dimanche au jeudi de 8h30 à 17h au numéro suivant : 3319*
+					
+					<br>> Pour les Résidents à l’étranger: du dimanche au jeudi de 8h30 à 17h au numéro suivant : +213 21 98 11 30*
+					
+					* Coût d’un appel local</p>
+			</div>
+		</div>
+
+		<div class="single-value">
+			<div class="info">
+				<h3 class="title">PROXIMITÉ</h3>
+				<p class="description">Animée d’une puissante dynamique de croissance, BNP Paribas El Djazaïr renforce aujourd’hui son réseau d’agences et de guichets automatiques de banque, couvrant ainsi progressivement le territoire national, avec une implantation dans 19 wilayas.
+
+					Choisissez à votre convenance l’agence la plus proche de chez vous ou de votre lieu de travail
+					
+					Vous pouvez également accéder à vos comptes 24h/24, 7j/7 et effectuer vos principales opérations à l’aide des services de banque en ligne.</p>
+			</div>
+		</div>
+
+	</div>
 	<!--intro section-->
-	<div class="green compte">
+	<!-- <div class="green compte">
 		<a class="important" href="#ouverture">
 			<h4>OUVERTURE DE COMPTE EN LIGNE</h4>
 		</a>
@@ -91,12 +146,12 @@
 				<h5>PROXIMITÉ</h5>
 			</a>
 		</div>
-	</div>
+	</div> -->
 
 
 
 	<!--ouverture section-->
-	<div id="ouverture" class="vert">
+	<!-- <div id="ouverture" class="vert">
 		<h3>OUVERTURE DE <b>COMPTE EN LIGNE</b></h3>
 		<div class="blanc">
 			<p class="par1">
@@ -123,60 +178,71 @@
 				<a class="lien important" href="./not-found.html" target="_blank">Ouvrir un compte en ligne</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
+	<h2 class="display-6 m-5 text-center"> OUVERTURE DE <b>COMPTE EN LIGNE</b></h2>
+		<p class="text-center">Chez BNP Paribas El Djazaïr, vous avez le choix d’ouvrir votre compte en ligne et en quelques clics. Un formulaire simple et efficace, suivez les étapes de souscriptions et procédez à l’ouverture de votre compte à distance</p>
 
 
+		<div class="container register">
+			<div class="row  row-cols-3 text-center register-links">
+				<div class="col-12 col-lg-4"><a href="not-found.html">Voir les conditions d’éligibilités</a>	</div>
+				<div class="col-12 col-lg-4"><a href="not-found.html">Documents requis</a></div>
+				<div class="col-12 col-lg-4 "><a href="not-found.html">Ouvrir un compte en ligne</a></div>
+
+			</div>
+		</div>
 	<!-- footer -->
 
 	<footer class="container-fluid d-flex flex-column w-100 p-0 bg-dark-bnp" id="footer">
 		<div class="upper-footer d-flex flex-column flex-lg-row justify-content-evenly   p-2 pt-5 bg-dark-bnp">
-			<div class=" me-auto">
-				<img class="  " width="70%" src="images/logo-footer-white.svg" alt="">
-			</div>
-			<div class="d-flex flex-column w-25 footer-links mt-5 mt-lg-0 ">
-				<a href="not-found.html" class="text-light ">Nous connaitre</a>
-				<a href="not-found.html" class="text-light ">Aide</a>
-				<a href="not-found.html" class="text-light ">Contacts</a>
-				<a href="not-found.html" class="text-light ">Agences</a>
-			</div>
-			<div class="d-flex flex-column w-25 footer-links ">
-				<a href="not-found.html" class="text-light ">Nous connaitre</a>
-				<a href="not-found.html" class="text-light ">Aide</a>
-				<a href="not-found.html" class="text-light ">Contacts</a>
-				<a href="not-found.html" class="text-light ">Agences</a>
-			</div>
-			<div class="d-flex flex-column w-25 footer-links ">
-				<a href="not-found.html" class="text-light ">Nous connaitre</a>
-				<a href="not-found.html" class="text-light ">Aide</a>
-				<a href="not-found.html" class="text-light ">Contacts</a>
-				<a href="not-found.html" class="text-light ">Agences</a>
-			</div>
-
-
+		  <div class=" me-auto"> 
+			<img class="  " width="70%" src="images/logo-footer-white.svg" alt="">
+			
+		  </div>
+	
+		  
+		  <div class="d-flex flex-column w-25 footer-links mt-5 mt-lg-0 ">
+			<a href="not-found.html" class="text-light ">Nous connaitre</a>
+			<a href="not-found.html" class="text-light ">Pré-domiciliation</a>
+			<a href="not-found.html" class="text-light ">Réglmentation</a>
+			<a href="not-found.html" class="text-light ">Mentions légales</a>
+		  </div>
+		  <div class="d-flex flex-column w-25 footer-links ">
+			<a href="not-found.html" class="text-light ">Simuler vos crédits</a>
+			<a href="not-found.html" class="text-light ">Finance</a>
+			<a href="Recrutement.html" class="text-light ">Recrutement</a>
+			<a href="not-found.html" class="text-light ">Tarifs</a>
+		  </div>
+		  <div class="d-flex flex-column w-25 footer-links ">
+			<a href="not-found.html" class="text-light ">Groupe BNP Paribas</a>
+			<a href="not-found.html" class="text-light ">Espace presse</a>
+			<a href="not-found.html" class="text-light ">Contacts</a>
+			<a href="not-found.html" class="text-light ">Agences</a>
+		  </div>
+	
+	
 		</div>
-
+	
 		<!-- social +  ©  -->
-		<div
-			class="lower-footer d-flex flex-column flex-lg-row justify-content-between align-items-center border-5 border-primary border-top bg-light">
-			<!-- social  -->
-			<div class="d-flex">
-				<ul>
-
-					<li><a href="not-found.html"><i class="fa-brands fa-square-facebook fa-xl   text-dark-bnp"></i></a>
-					</li>
-					<li><a href="not-found.html"><i class="fa-brands fa-linkedin fa-xl text-dark-bnp"></i></a></li>
-					<li><a href="not-found.html"><i class="fa-brands fa-youtube fa-xl text-dark-bnp"></i></a></li>
-				</ul>
-
-			</div>
-
-			<!--  ©  -->
-			<p class="m-0 text-dark-bnp"><span class="text-primary">©</span> BNP Paribas - 2023</p>
+		<div class="lower-footer d-flex flex-column flex-lg-row justify-content-between align-items-center border-5 border-primary border-top bg-light">
+		  <!-- social  -->
+		  <div class="d-flex">
+			<ul>
+	
+			  <li><a href="not-found.html"><svg class="svg-inline--fa fa-square-facebook fa-xl text-dark-bnp" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="square-facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg><!-- <i class="fa-brands fa-square-facebook fa-xl   text-dark-bnp"></i> Font Awesome fontawesome.com --></a></li>
+			  <li><a href="not-found.html"><svg class="svg-inline--fa fa-linkedin fa-xl text-dark-bnp" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg><!-- <i class="fa-brands fa-linkedin fa-xl text-dark-bnp"></i> Font Awesome fontawesome.com --></a></li>
+			  <li><a href="not-found.html"><svg class="svg-inline--fa fa-youtube fa-xl text-dark-bnp" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fa-brands fa-youtube fa-xl text-dark-bnp"></i> Font Awesome fontawesome.com --></a></li>
+			</ul>
+	   
+		  </div>
+	
+		  <!--  ©  -->
+		  <p class="m-0 text-dark-bnp"><span class="text-primary">©</span> BNP Paribas - 2023</p>
 		</div>
-
-	</footer>
+	
+	  </footer>
 
 	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://kit.fontawesome.com/c501080d7e.js" crossorigin="anonymous"></script>
