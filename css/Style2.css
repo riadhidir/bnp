@@ -1,0 +1,380 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre Recrurtement */
+header{
+    
+    background: url("../images/Recrutement\ 1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+header h1{
+    border:  solid #00925b;
+    border-radius: 25px;
+    padding: 20px 20px; 
+    background-color: rgba(255,255, 255, 0.2);
+    font-size: 45px;
+    margin-bottom: 120px;
+    color: #fff;
+    
+}
+.btn-offres{
+    color: #fff ;
+    background-color: #00925b;
+    font-size: 15px;
+    border: 2px solid #00925b;
+    padding: 5px 20px;   
+}
+.btn-offres:hover{
+    background-color: #fff;
+    color: #00925b;
+    border: 2px solid #fff;
+}
+h1{
+    text-align: center;
+    margin-bottom: 45px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;  
+     
+
+}
+
+
+.card{  
+    
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-right: 25px;
+    width: 400px;
+    height: 400px;
+    background: url("../images/card.jpg") center no-repeat;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.85);
+}
+.card::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00925b;
+}
+.card .img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.card .img span{
+   
+    width: 25%;
+    height: 100%;
+    background: url('../images/photo-1522202176988-66273c2fd55f.avif') no-repeat;
+    transition: 0.5s;
+
+}
+
+
+.card .img span:nth-child(1) {
+    transition-delay: 0S;
+    background-position: 25%;
+}
+.card .img span:nth-child(2) {
+    transition-delay: 0.1s;
+    background-position: 50%;
+}
+.card .img span:nth-child(3) {
+    transition-delay: 0.2s;
+    background-position: 75%;
+}
+.card .img span:nth-child(4) {
+    transition-delay: 0.3s;
+    background-position: 100%;
+}
+
+.card:hover .img > span {
+    transform: translateY(-100%);
+}
+.content {
+
+    font-size: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.content h2{
+    font-size: 20px;
+}
+
+.card:hover .content{
+    transform: translateY(0%);
+    transition-delay: 0.3s;
+}
+
+
+
+
+.card-1{  
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-right: 25px;
+    width: 400px;
+    height: 400px;
+    background: url('images/card.jpg') center no-repeat;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.85);
+}
+.card-1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00925b;
+}
+.card-1 .img-1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.card-1 .img-1 span{
+   
+    width: 25%;
+    height: 100%;
+    background: url('../images/JOIN\ OUR\ TEAM.jpg') no-repeat;
+    transition: 0.5s;
+
+}
+
+
+.card-1 .img-1 span:nth-child(1) {
+    transition-delay: 0S;
+    background-position: 5%;
+}
+.card-1 .img-1 span:nth-child(2) {
+    transition-delay: 0.1s;
+    background-position: 30%;
+}
+.card-1 .img-1 span:nth-child(3) {
+    transition-delay: 0.2s;
+    background-position: 55%;
+}
+.card-1 .img-1 span:nth-child(4) {
+    transition-delay: 0.3s;
+    background-position: 80%;
+}
+
+.card-1:hover .img-1 > span {
+    transform: translateY(-100%);
+}
+.content-1 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.content-1 h2{
+    font-size: 20px;
+}
+
+.card-1:hover .content-1{
+    transform: translateY(0%);
+    transition-delay: 0.3s;
+}
+
+
+.card-2{  
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 400px;
+    height: 400px;
+    background: url('images/photo-1522202176988-66273c2fd55f.avif') center no-repeat;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.85);
+}
+.card-2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00925b;
+}
+.card-2 .img-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+.card-2 .img-2 span{
+   
+    width: 25%;
+    height: 100%;
+    background: url('../images/istockphoto-1291751221-170667a.jpg') no-repeat;
+    transition: 0.5s;
+
+}
+
+
+.card-2 .img-2 span:nth-child(1) {
+    transition-delay: 0S;
+    background-position: 5%;
+}
+.card-2 .img-2 span:nth-child(2) {
+    transition-delay: 0.1s;
+    background-position: 30%;
+}
+.card-2 .img-2 span:nth-child(3) {
+    transition-delay: 0.2s;
+    background-position: 55%;
+}
+.card-2 .img-2 span:nth-child(4) {
+    transition-delay: 0.3s;
+    background-position: 80%;
+}
+
+.card-2:hover .img-2 > span {
+    transform: translateY(-100%);
+}
+.content-2{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.content-2 h2{
+    font-size: 20px;
+}
+
+.card-2:hover .content-2{
+    transform: translateY(0%);
+    transition-delay: 0.3s;
+}
+footer .onglets-1 > a{
+    text-decoration: none;
+    color:#00925b;
+    margin-left: 3cm;
+    box-sizing: border-box;
+   
+
+}
+.container-2{
+    background-color:  rgba(128, 128, 128, 0.25);
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+.container-2 .btn-pri{
+    padding: 10px 10px;
+    background-color: #00925b;
+    color:#fff;
+    border-radius: 25PX ;
+    border-color: #00925b;
+    margin-top: 10px;
+  
+}
+.RECH input{
+    margin: 20px;
+    margin-left: 25%;
+    padding: 10px;
+    border-radius: 8px; 
+    border: 2px solid #04AA6D;
+    width: 50%;
+    font-size: 15px;
+   
+    /* box-shadow: #04AA6D ; */
+}
+.RECH{
+    background-color:  rgba(128, 128, 128, 0.25);
+    margin: 30px;
+    padding: 50px;
+    border-radius: 25px;
+display: flex;
+    flex-direction: column;
+}
+.act{
+    margin-left:37% ;
+
+/* text-align: center;} */
+
+}
+.RECH label{
+margin-left: 37%;
+color: black;
+
+}
+
+.Bouton{
+
+ display: block;
+ background-color: #04AA6D;
+ color: #ffffff;
+ width: 150px;
+ height: 40px ;
+ border-radius: 10px;
+
+ margin: 40px;
+ position: relative;
+ left: 430px;
+ top: 0px; 
+
+}
+.OFFRES{
+    text-align: center;
+}
+.a{
+margin:50px  50px;
+padding:50px;
+border-radius: 25px;
+background-color: rgba(128, 128, 128, 20%);
+/* opacity: 20%; */
+text-align: center;
+color: rgb(10, 10, 10);
+}
+a{
+opacity: 100%;
+text-decoration: none;
+color: #04AA6D ;
+}
+@media screen and (max-width:280px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}   
