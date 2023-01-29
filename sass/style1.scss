@@ -57,7 +57,7 @@
         background-color: white;
     }
 }
-.fa-square-facebook:hover ,.fa-linkedin:hover,.fa-youtube:hover{
+.fa-square-facebook:hover ,.fa-linkedin:hover,.fa-youtube:hover,.fa-vr-cardboard:hover{
 	color:#03a776 !important;
 }
 
@@ -136,7 +136,7 @@ a{
     img{
 	transition: scale 0.2s ease-in-out;
     &:hover{
-	scale: 1.3;
+	scale: 0.9;
         }
     }
 } 
@@ -147,9 +147,8 @@ a{
 .sidebar2 {
 	position: fixed;
 	display: flex;
-	gap:3px;
 	top: 25%;
-	left: -51px;
+	left: -52px;
 	z-index: 100;
 	transition: all 0.4s ease-in-out;
 
@@ -163,13 +162,14 @@ a{
             list-style-type: none;
             li {
                 a{
+                    text-align: center;
                 display: block;
                 cursor: pointer;
                 padding:30px 10px;
                 border-radius: 25px;
                 &:hover{
                     background-color: white;
-                    .fa-map-location-dot,.fa-headset,.fa-phone-volume{
+                    .fa-map-location-dot,.fa-headset,.fa-phone-volume,.fa-vr-cardboard{
                         
                             color:black !important;
                             

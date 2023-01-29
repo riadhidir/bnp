@@ -5,6 +5,7 @@ $primary :#03a776;
 
 $custom-theme-colors:(
 "dark-bnp":#0d1519,
+"orange-bnp" : #fe7d15
 
 );
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);

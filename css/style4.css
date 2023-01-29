@@ -1,150 +1,111 @@
-a{
-    text-decoration: none !important;
-}
 
-.single-value{
-    
-    border-radius: 16px;
-  margin: 0 auto;
-  width: 100%;
-  /* max-width: 100%; */
-  /* min-height: 500px; */
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+.feature-section{
+    margin-bottom:100px;
+}
+.feature{
+    width: 425px;
+    height:290px;
+    border-radius: 10px;
+    /* background-color: red; */
   overflow: hidden;
-  background-size: cover;
+    background-size: cover;
 }
-
-
-.single-value:nth-child(1){
-  background-image: url("../images/Privacy\ policy-bro.svg");
+.feature:nth-child(1){
+    background-image: url("../images/feature-support.jpg") ;
 
 }
-.single-value:nth-child(2){
-    background-image: url("../images/Location\ search-bro.svg");
-  
-  }
-  .single-value:nth-child(3){
-    background-image: url("../images/Service\ 24_7-bro.svg");
-  
-  }
-
-
-.single-value .info{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    transform: translateY(100%)
-      translateY(-88px)
-      translateZ(0);
-    transition: transform 0.5s ease-out;
+.feature:nth-child(2){
+    background-image: url("../images/feature-location.jpg") ;
     
 }
+.feature:nth-child(3){
+    background-image: url("../images/feature-security.jpg") ;
+    
+}
+.feature .info{
+    border-radius: 10px;
 
-.info:before {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    transform:translateY(100%) translateY(-20%);
+    transition: transform 0.5s ease-out ;
+}
+
+.info::before{  
     z-index: -1;
     display: block;
+    overflow: hidden;
     position: absolute;
     content: ' ';
-    width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-image: url("../images/Privacy\ policy-bro.svg");
+    width: 100%;
     filter: blur(10px);
     background-size: cover;
     opacity: 0.25;
     transform: translateY(-100%)
-      translateY(88px)
-      translateZ(0);
+    translateY(88px)
+    translateZ(0);
     transition: transform 0.5s ease-out;
-  }
-  .single-value:hover .info,
-  .single-value:hover .info:before {
+
+}
+
+.info:nth-child(1)::before{
+    background-image: url("../images/feature-support.jpg") ;
+
+}
+.info:nth-child(2)::before{
+    background-image: url("../images/feature-location.jpg") ;
+    
+}
+.info:nth-child(3)::before{
+    background-image: url("../images/feature-security.jpg") ;
+    
+}
+
+.feature:hover .info,
+.feature:hover .info:before{
     transform: translateY(0) translateZ(0);
     overflow: auto;
 
-  }
-  .title {
+}
+.info .title{
     margin: 0;
     padding: 24px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.87);
-  }
-  .description {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.info  .description {
     margin: 0;
+    color:white;
     padding: 0 24px 24px;
     font-size: 18px;
     line-height: 1.5;
     overflow: auto;
   }
-  
-  * {
-    box-sizing: border-box;
-    position: relative;
-    transition: all .3s ease
+
+
+  ::-webkit-scrollbar {
+    width: 5px;
   }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fe7d15; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff9f51; 
+  }
+
  
-  
-
-  
-  body,
-  header {
-    background: #fafafa
-  }
-  
-  header {
-    padding: 40px;
-    min-height: 200px;
-    text-align: center;
-    color: rgba(0, 0, 0, .87)
-  }
-  
- 
-
-  
-  h1 {
-    margin-bottom: 0.5em;
-    font-weight: inherit;
-    line-height: 1.2;
-    color: #1c5b72;
-    font-size: 2.618em
-  }
-  
-  @media (min-width:800px) {
-    h1 {
-      font-size: 4.236em;
-      font-weight: 300
-    }
-  }
-  
-  p {
-    margin-bottom: 1.3em;
-    line-height: 1.618
-  }
-  
-  @media (min-width:800px) {
-    .description {
-      font-size: 1.3em
-    }
-    
-  }
-  
-  
-  .register-links div{
-    height: 75px;
-  }
-  .register-links a {
-    text-decoration: none;
-    margin: 15px 20px;
-    padding: 15px 20px;
-
-    color:white;
-    background-color: #03a776;
-  }
-  .register {
-    margin-bottom: 100px;
-  }

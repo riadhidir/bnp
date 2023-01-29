@@ -74,6 +74,22 @@ const navBarToggle = (scrollAmount) => {
 
 }
 
+// window.FontAwesomeConfig = { autoReplaceSvg: false };
+let element  = document.getElementById("xjdWoS8_qz4");
+    let playButton = element.children[0];
+    let video = document.createElement('iframe');
+    let heroSection = document.getElementsByClassName("hero-text")[0];
+    video.src="https://www.youtube.com/embed/"+element.id+"?autoplay=1&rel=0";
+    video.width = "100%";
+    video.height= "100%";
+    video.frameBorder = 0;
+    playButton.addEventListener("click",()=>{
+    
+        element.classList.remove("hero-pic");
+        element.removeChild(playButton);
+        element.append(video); 
+        heroSection.style.bottom = 0;
+    });
 // modal poper
 const linkModal = (modalId) => {
     const modal = new bootstrap.Modal(modalId);
